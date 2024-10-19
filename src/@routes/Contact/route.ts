@@ -1,11 +1,10 @@
 import { rootRoute } from '@routes/Layout';
-import { createRoute } from '@tanstack/react-router';
-import { Contact } from './Contact';
+import { createRoute, lazyRouteComponent } from '@tanstack/react-router';
 
 const contactRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/contact',
-  component: Contact,
+  component: lazyRouteComponent(() => import('./Contact'), 'Contact'),
 });
 
 export { contactRoute };

@@ -1,11 +1,10 @@
 import { rootRoute } from '@routes/Layout';
-import { createRoute } from '@tanstack/react-router';
-import { About } from './About';
+import { createRoute, lazyRouteComponent } from '@tanstack/react-router';
 
 const aboutRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/about',
-  component: About,
+  component: lazyRouteComponent(() => import('./About'), 'About'),
 });
 
 export { aboutRoute };

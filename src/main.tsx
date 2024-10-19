@@ -3,7 +3,7 @@ import { RouterProvider } from '@tanstack/react-router';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 import GlobalStyles from './GlobalStyles';
-import { router } from '@routes';
+import { router } from '@routes/__root';
 
 // Register the router instance for type safety
 declare module '@tanstack/react-router' {
