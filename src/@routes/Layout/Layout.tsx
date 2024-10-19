@@ -1,22 +1,16 @@
-import { Link, Outlet } from '@tanstack/react-router';
+import { Outlet } from '@tanstack/react-router';
 import { TanStackRouterDevtools } from '@tanstack/router-devtools';
+import { Header } from './components/Header';
+import { Footer } from './components/Footer';
 
 const Layout = () => {
   return (
     <>
-      <div className="p-2 flex gap-2">
-        <Link to="/" className="[&.active]:font-bold">
-          Home
-        </Link>{' '}
-        <Link to="/about" className="[&.active]:font-bold">
-          About
-        </Link>
-        <Link to="/contact" className="[&.active]:font-bold">
-          Contact
-        </Link>
-      </div>
+      <Header />
       <hr />
       <Outlet />
+      <hr />
+      <Footer />
       <TanStackRouterDevtools />
     </>
   );

@@ -1,11 +1,10 @@
 import { useQuery } from '@tanstack/react-query';
+import { TodoService } from '@http';
 
-const getTodos = () => {
-  return fetch('https://dummyjson.com/todos').then((res) => res.json());
-};
+const todoService = new TodoService();
 
 const Home = () => {
-  const query = useQuery({ queryKey: ['todos'], queryFn: getTodos });
+  const query = useQuery({ queryKey: ['todos'], queryFn: todoService.get });
 
   console.log(query.data);
 

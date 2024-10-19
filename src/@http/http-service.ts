@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'base-url-goes-here';
+const BASE_URL = 'https://dummyjson.com';
 
 const httpInstance = axios.create({
   baseURL: `${BASE_URL}/`,
