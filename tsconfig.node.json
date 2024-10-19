@@ -27,6 +27,8 @@
       "@http/*": ["@http/*"],
       "@hooks/*": ["@hooks/*"],
       "@routes/*": ["@routes/*"],
+      "@components/*": ["@components/*"],
+      "@interfaces/*": ["@interfaces/*"],
     }
   },
   "include": ["vite.config.ts"],

@@ -1,4 +1,3 @@
-// Define a type for the user data
 interface UserData {
   id: string;
   name: string;

@@ -24,6 +24,8 @@ export default defineConfig({
       '@http': path.resolve(__dirname, 'src/@http'),
       '@hooks': path.resolve(__dirname, 'src/@hooks'),
       '@routes': path.resolve(__dirname, 'src/@routes'),
+      '@components': path.resolve(__dirname, 'src/@components'),
+      '@interfaces': path.resolve(__dirname, 'src/@interfaces'),
     },
   },
 });
